@@ -20,6 +20,10 @@
     
 }
 
+#toggleDark {
+    cursor: pointer;
+}
+
 .nav-item {
     margin-right: 15px;
     cursor: pointer;
@@ -27,4 +31,11 @@
 
 .nav-item:last-child{
     margin-right: 0;
+}
+
+.titulo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
 }
