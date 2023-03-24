@@ -31,15 +31,18 @@ const decrement = () => {
   if (mainNumber >= 2) {
     mainNumber = 0;
   }
+  else {
+    mainNumber++
+  }
 };
 
 const verififyNav = () => {
   if (mainNumber >= 2) {
-    ptbr.innerHTML = "pt";
+    ptbr.innerHTML = "PT";
     titulo.innerHTML = "Olá";
     titlee.innerHTML = "Bem vindo";
   } else {
-    ptbr.innerHTML = "en";
+    ptbr.innerHTML = "EN";
     titulo.innerHTML = "Hello";
     titlee.innerHTML = "Welcome";
   }
