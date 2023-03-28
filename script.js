@@ -5,11 +5,11 @@ const themeChange = () => {
   toggle.classList.toggle("bi-moon");
   if (toggle.classList.toggle("bi-brightness-high-fill")) {
     body.style.background = "white";
-    body.style.color = "black";
+    body.style.color = "#28ac86";
     body.style.transition = "2s";
   } else {
     body.style.background = "black";
-    body.style.color = "white";
+    body.style.color = "#28ac86";
     body.style.transition = "2s";
   }
 };
@@ -18,10 +18,13 @@ let titulo = document.getElementById("titulo");
 let ptbr = document.getElementById("pt-br");
 let mainNumber = 0;
 let titlee = document.getElementById("main-title");
+let id1 = document.getElementById('link1')
+let id2 = document.getElementById('link2')
 
 const changeLeng = () => {
   increment();
-  verififyNav();
+  setTimeout(transicao, 500);
+  setTimeout(verifyNav, 1000);
   decrement();
 };
 
@@ -35,15 +38,47 @@ const decrement = () => {
     mainNumber++
   }
 };
+const global = document.getElementById('globall')
+const body = document.querySelector("body");
 
-const verififyNav = () => {
+
+const transicao = () => {
+
   if (mainNumber >= 2) {
-    ptbr.innerHTML = "PT";
-    titulo.innerHTML = "Olá";
-    titlee.innerHTML = "Bem vindo";
+    ptbr.style.color = '#28ac8700'
+    titulo.style.color = '#28ac8700'
+    titlee.style.color = '#28ac8700'
+    id1.style.color = '#28ac8700'
+    id2.style.color = '#28ac8700'
   } else {
+    ptbr.style.color = '#28ac8700'
+    titulo.style.color = '#28ac8700'
+    titlee.style.color = '#28ac8700'
+    id1.style.color = '#28ac8700'
+    id2.style.color = '#28ac8700'
+  }
+}
+
+const verifyNav = () => {
+  if (mainNumber >= 2) {
     ptbr.innerHTML = "EN";
     titulo.innerHTML = "Hello";
     titlee.innerHTML = "Welcome";
-  }
-};
+    id1.innerHTML = 'My projects'
+    id2.innerHTML = 'About me'
+    ptbr.style.color = '#28ac86'
+    titulo.style.color = '#28ac86'
+    titlee.style.color = '#28ac86'
+    id1.style.color = '#28ac86'
+    id2.style.color = '#28ac86'}
+  else {
+    ptbr.innerHTML = "PT";
+    titulo.innerHTML = "Olá";
+    titlee.innerHTML = "Bem vindo";
+    id1.innerHTML = 'Meus Projetos'
+    id2.innerHTML = 'Sobre mim'
+    ptbr.style.color = '#28ac86';
+    titulo.style.color = '#28ac86';
+    titlee.style.color = '#28ac86'
+    id1.style.color = '#28ac86'
+    id2.style.color = '#28ac86'}}

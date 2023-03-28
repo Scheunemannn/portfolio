@@ -3,7 +3,7 @@
     padding: 0;
     transition:1s;
     text-decoration: none;
-    color:inherit
+    color:#28ac86;
 }
 
 .global{
@@ -56,10 +56,6 @@
     transition: 1s;
     margin: 0 1rem;
     border: white;
+    
 }
 
-.link:hover {
-    transition: 1s;
-    border-bottom:1px solid black;
-    border-radius: 2px;
-}
