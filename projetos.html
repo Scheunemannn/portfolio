@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="nav-bar">
-        <a href="index.html"><h1 id="titulo">Scheunemann</h1></a>
+        <a href="index.html"><h1 id="tituloo">Scheunemann</h1></a>
         <ul class="menu">
             <i class="bi bi-brightness-high-fill" onclick="themeChange()" id="toggleDark"></i>
         </ul>
@@ -22,20 +22,20 @@
 
     <article>
         <div class="projetos-main-container">
-            <div id="projetoImg" class="projetos-container">
+            <div class="projetos-container">
+                <div id="projetoImg" class="projetos-container"></div>
             </div>
             <div class="projetos-texto">
                 <ul class="projeto-lista">
-                    <h2>Projetos</h2>
-                    <li>1</li>
+                    <h2 id="titulo-projeto">Projetos</h2>
+                    <li id="listaQuantidadeDeProjetos">1</li>
                 </ul>
-                <hr>
-                <ul onclick="rpgSite()" onmouseout="clearImg()" onmouseover="showImg1()" id="projetoSiteRpg" class="projeto-lista">
-                    <h3>Barões da Pólvora</h3>
-                    <li>Web Development</li>
+                <hr >
+                <ul onclick="rpgSite()" onmouseout="clearImg()" onmouseover="showImg()" id="projetoSiteRpg" class="projeto-lista">
+                    <h3 id="tituloRpg">Lorem, ipsum dolor.</h3>
+                    <li id="listaRpg">Web Development</li>
                 </ul>
-                <hr>
-             
+                <hr id="linhaUm">
             </div>
         </div>
     </article>
