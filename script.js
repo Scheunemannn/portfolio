@@ -84,35 +84,12 @@ const verifyNav = () => {
   }
 };
 
-const tituloProjetos = document.getElementById('tituloo')
 
-const tituloProjeto = document.getElementById('titulo-projeto')
 
-const tituloRpg = document.getElementById('tituloRpg')
 
-const listaRpg = document.getElementById('listaRpg')
 
-const listaQuantidadeDeProjetos = document.getElementById('listaQuantidadeDeProjetos')
-
-const linhaUm = document.querySelector('hr')
-
-const linhaDois = document.getElementById('linhaUm')
-
-const rpgSite = () =>{
-  setTimeout(apaga, 400)
-  setTimeout(mudaSite, 800)
-}
 
 const mudaSite = () => {
   window.location.href = 'https://scheunemannn.github.io/Carousel-RPG/'
 }
 
-const apaga = () => {
-  tituloProjetos.style.color = "#28ac8700";
-  tituloProjeto.style.color = '#28ac8700'
-  tituloRpg.style.color = '#28ac8700'
-  listaRpg.style.color = '#28ac8700'
-  listaQuantidadeDeProjetos.style.color = '#28ac8700'
-  linhaUm.style.color = '#28ac8700'
-  linhaDois.style.color = '#28ac8700'
-}
