@@ -1,61 +1,64 @@
-*{
-    margin:0;
-    padding: 0;
-    transition:1s;
-    text-decoration: none;
-    color:#28ac86;
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+  text-decoration: none;
+  color: #28ac86;
 }
 
-.global{
-    height:100vh;
-    overflow: hidden;
-    transition: 1s;
+.global {
+  height: 100vh;
+  overflow: hidden;
+  transition: 1s;
 }
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    margin:1rem;
-    align-items: center;
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
 }
 
 .menu {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 #toggleDark {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav-item {
-    margin-right: 15px;
-    cursor: pointer;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
-.nav-item:last-child{
-    margin-right: 0;
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 .titulo-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  flex-direction: column;
 }
 
 #main-title {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .links {
-    margin-top: 2rem;
+  margin-top: 2rem;
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
-    transition: 1s;
-    margin: 0 1rem;
-    border: white;
-    
+  transition: 1s;
+  
+  border: white;
 }
 

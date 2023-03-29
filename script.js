@@ -18,8 +18,8 @@ let titulo = document.getElementById("titulo");
 let ptbr = document.getElementById("pt-br");
 let mainNumber = 0;
 let titlee = document.getElementById("main-title");
-let id1 = document.getElementById('link1')
-let id2 = document.getElementById('link2')
+let id1 = document.getElementById("link1");
+let id2 = document.getElementById("link2");
 
 const changeLeng = () => {
   increment();
@@ -33,52 +33,59 @@ const increment = () => mainNumber++;
 const decrement = () => {
   if (mainNumber >= 2) {
     mainNumber = 0;
-  }
-  else {
-    mainNumber++
+  } else {
+    mainNumber++;
   }
 };
-const global = document.getElementById('globall')
+const global = document.getElementById("globall");
 const body = document.querySelector("body");
 
-
 const transicao = () => {
-
   if (mainNumber >= 2) {
-    ptbr.style.color = '#28ac8700'
-    titulo.style.color = '#28ac8700'
-    titlee.style.color = '#28ac8700'
-    id1.style.color = '#28ac8700'
-    id2.style.color = '#28ac8700'
+    ptbr.style.color = "#28ac8700";
+    titulo.style.color = "#28ac8700";
+    titlee.style.color = "#28ac8700";
+    id1.style.color = "#28ac8700";
+    id2.style.color = "#28ac8700";
   } else {
-    ptbr.style.color = '#28ac8700'
-    titulo.style.color = '#28ac8700'
-    titlee.style.color = '#28ac8700'
-    id1.style.color = '#28ac8700'
-    id2.style.color = '#28ac8700'
+    ptbr.style.color = "#28ac8700";
+    titulo.style.color = "#28ac8700";
+    titlee.style.color = "#28ac8700";
+    id1.style.color = "#28ac8700";
+    id2.style.color = "#28ac8700";
   }
-}
+};
 
 const verifyNav = () => {
   if (mainNumber >= 2) {
-    ptbr.innerHTML = "EN";
+    ptbr.innerHTML = "PT";
     titulo.innerHTML = "Hello";
     titlee.innerHTML = "Welcome";
-    id1.innerHTML = 'My projects'
-    id2.innerHTML = 'About me'
-    ptbr.style.color = '#28ac86'
-    titulo.style.color = '#28ac86'
-    titlee.style.color = '#28ac86'
-    id1.style.color = '#28ac86'
-    id2.style.color = '#28ac86'}
-  else {
-    ptbr.innerHTML = "PT";
+    id1.innerHTML = "My projects";
+    id2.innerHTML = "About me";
+    ptbr.style.color = "#28ac86";
+    titulo.style.color = "#28ac86";
+    titlee.style.color = "#28ac86";
+    id1.style.color = "#28ac86";
+    id2.style.color = "#28ac86";
+    id1.innerHTML = '<a id="link1" class="link" href="projects.html">My Projects</a>'
+  } else {
+    ptbr.innerHTML = "EN";
     titulo.innerHTML = "Olá";
     titlee.innerHTML = "Bem vindo";
-    id1.innerHTML = 'Meus Projetos'
-    id2.innerHTML = 'Sobre mim'
-    ptbr.style.color = '#28ac86';
-    titulo.style.color = '#28ac86';
-    titlee.style.color = '#28ac86'
-    id1.style.color = '#28ac86'
-    id2.style.color = '#28ac86'}}
+    id1.innerHTML = "Meus Projetos";
+    id2.innerHTML = "Sobre mim";
+    ptbr.style.color = "#28ac86";
+    titulo.style.color = "#28ac86";
+    titlee.style.color = "#28ac86";
+    id1.style.color = "#28ac86";
+    id2.style.color = "#28ac86";
+    id1.innerHTML = '<a id="link1" class="link" href="projetos.html">Meus Projetos</a>'
+  }
+};
+
+
+
+const rpgSite = () => {
+  window.location.href = 'https://scheunemannn.github.io/Carousel-RPG/'
+}
