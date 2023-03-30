@@ -84,7 +84,16 @@ const verifyNav = () => {
   }
 };
 
+const projetoImg = document.getElementById('projetoImg')
 
+const showImg = () => {
+  projetoImg.style.opacity = '1'
+  projetoImg.src = 'assets/siteRpgImg.png'
+}
+
+const clearImg = () => {
+  projetoImg.style.opacity = '0'
+}
 
 
 
